@@ -7,3 +7,7 @@
 git clone https://github.com/genmancoder/web_app.git
 cd web_app
 ```
+
+### Create a new branch itp-acts-yourlastname using itp-acts branch.
+
+```git checkout -b itp-acts-paulin itp-acts```
