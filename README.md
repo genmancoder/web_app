@@ -41,13 +41,13 @@ cd web_app
 * Append the new data to the data.txt file.
 * After writing new data to the file, display the updated contents of data.txt on the web page.
 
-#### PHP-Act-5 - Working with Files
+#### PHP-Act-5 - Database Connectivity
 
 * Set up a MySQL database with a table named "users" containing fields for id, username, and email. Write PHP scripts to connect to the database and perform CRUD operations on the "users" table.
 
 #### Project Work (Midterm)
 
-* Develop a simple CRUD application for managing a list of any two (2) related entities listed below. The application should allow users to add, edit, delete, and view contact information stored in a MySQL database.
+* Develop a simple CRUD application for managing a list of any two (2) related entities listed below. The application should allow users to add, edit, delete, and view  information stored in a MySQL database. This project should be developed using Java and PHP. There should be two application (web and desktop) running and/or using the same database/database server for integration. Any changes or information added should reflect on both apps. Web app must be responsive (no css framework).
 
 - User
 
