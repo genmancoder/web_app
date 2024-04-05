@@ -1,5 +1,5 @@
 <?php
-$stringVar = "Hello";
+$stringVar = "H";
 $integerVar = 10;
 $floatVar = 5.5;
 $booleanVar = true;
