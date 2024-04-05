@@ -1,11 +1,11 @@
 <?php
 function determineAgeGroup($age) {
     if ($age >= 0 && $age < 18) {
-        return "minor";
+        return "you are a minor";
     } elseif ($age >= 18 && $age < 60) {
-        return "adult";
+        return "you are a adult";
     } else {
-        return "senior citizen";
+        return "you are a senior citizen";
     }
 }
 
