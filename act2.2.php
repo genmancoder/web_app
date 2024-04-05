@@ -1,5 +1,5 @@
 <?php
-$students = array("Alice", "Bob", "Charlie", "David", "Emily");
+$students = array("Jerick", "Joan", "Cristy", "Ryan", "Elton");
 
 foreach ($students as $student) {
     echo $student . "<br>";
