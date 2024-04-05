@@ -1,3 +1,4 @@
+<!-- login_form.php -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,14 +18,17 @@
 </body>
 </html>
 
-
+<!-- login.php -->
 <?php
+// Define valid username and password for demonstration
 $validUsername = "user";
 $validPassword = "password";
 
+// Retrieve submitted username and password from the form
 $username = isset($_POST['username']) ? $_POST['username'] : '';
 $password = isset($_POST['password']) ? $_POST['password'] : '';
 
+// Validate the submitted username and password
 if ($username === $validUsername && $password === $validPassword) {
     echo "Login successful!";
 } else {
