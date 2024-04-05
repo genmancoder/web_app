@@ -8,20 +8,25 @@
 <body>
     <?php       
        if(isset($_POST['submit'])){
-            
-            $firstname = $_POST['name'];
+
             $age        = $_POST['age'];
 
-            echo $firstname . " you are " . $age . ' years old.';
+            if($age <= 18) 
+            {
+                echo " you are minor";
+            }
+            else if($age > 18 && $age < 60) 
+            {
+                echo " you are adult";
+            }else 
+            {
+                echo " you are senior citizen";
+            }
        }
        
     ?>
     <form action="index.php" method="POST">
         <table>
-            <tr>
-                <td>Name</td>
-                <td><input name="name" type="text" /> </td>
-            </tr>
             <tr>
                 <td>Age</td>
                 <td><input name="age" type="text" /> </td>
