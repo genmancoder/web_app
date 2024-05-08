@@ -1,0 +1,30 @@
+Name: Jashley D. Guiang
+Age: 19
+Sex: Female
+Occupation: Student
+
+Name: Joely D. Guiang
+Age: 13
+Sex: Male
+Occupation: Student
+
+
+Name: Jevey D. Guiang
+Age: 18
+Sex: Male
+Occupation: Student
+
+
+
+Name: Juvy D. Guiang
+Age: 39
+Sex: Female
+Occupation: Trainor
+
+
+Name: Jeffry O. Guiang
+Age: 39
+Sex: Male
+Occupation: Farmer
+
+
