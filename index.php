@@ -1,38 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <?php       
-       if(isset($_POST['submit'])){
-            
-            $firstname = $_POST['name'];
-            $age        = $_POST['age'];
+<form action="" method="post">
+<label for="firstname">First Name:</label><br>
+        <input type="text" id="firstname" name="firstname"><br><br>
+        
+        <label for="lastname">Last Name:</label><br>
+        <input type="text" id="lastname" name="lastname"><br><br>
+        
+        <label for="middlename">Middle Name:</label><br>
+        <input type="text" id="middlename" name="middlename"><br><br>
 
-            echo $firstname . " you are " . $age . ' years old.';
-       }
-       
-    ?>
-    <form action="index.php" method="POST">
-        <table>
-            <tr>
-                <td>Name</td>
-                <td><input name="name" type="text" /> </td>
-            </tr>
-            <tr>
-                <td>Age</td>
-                <td><input name="age" type="text" /> </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td><input name="submit" type="submit" value="Submit" /> </td>
-            </tr>
-        </table>
-    </form>
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+        
+        <input type="submit" value="Submit">    
+</form>
 
+<?php
 
-</body>
-</html>
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $file = fopen("data.txt", "a"); // Open the file in append mode
+        $firstname = $_POST["firstname"];
+        $lastname = $_POST["lastname"];
+        $middlename = $_POST["middlename"];
+        $gender = isset($_POST["gender"]) ? $_POST["gender"] : '';
+        $txt = "First Name: $firstname\nLast Name: $lastname\nMiddle Name: $middlename\nGender: $gender\n\n";
+        fwrite($file, $txt); // Append the new data to the file
+        fclose($file);
+        echo "<p>Data has been saved successfully.</p>";
+        echo "<p>$txt</p>";
+    }
+?>
