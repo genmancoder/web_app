@@ -1,4 +1,13 @@
 <?php
+function determineAge($age) {
+    if ($age < 18) {
+        return "minor";
+    } elseif ($age >= 18 && $age < 60) {
+        return "adult";
+    } else {
+        return "senior citizen";
+    }
+}
     $stringVariable = "Hello";
     $intVariable = 10;
     $floatVariable = 3.14;
@@ -18,15 +27,7 @@
     echo "Result of division: " . $result4 . "<br>";
     echo"----------------------------------------------<br>";
 
-function determineAge($age) {
-    if ($age < 18) {
-        return "minor";
-    } elseif ($age >= 18 && $age < 60) {
-        return "adult";
-    } else {
-        return "senior citizen";
-    }
-}
+
 
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["age"])) {
     $age = $_POST["age"];
