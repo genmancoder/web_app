@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image:
+    linear-gradient( to left, rgba(19, 22, 117, 0.40), rgba(19, 22, 117, 0.40)),
+    url('backgroundpic.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    height: auto;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: auto;
+}
+.background {
+    height: auto; /* Full viewport height */
+    background-image: url(backgroundpic.jpg); /* Replace with your image path */
+    background-image: url(dorsulogo.jpg); 
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Text color */
+    text-align: center;
+}
+form{
+    justify-content: center;
+   
+}
+
+.outer-container{
+    width: 100%;
+    height: 50vh;
+    display: contents;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    width: 1000px;
+    background-color: transparent   ;
+    gap: 2;
+    margin: auto;
+}
+.col{
+    width: 600px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.col img{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+}
+.col form{
+    width: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    border-radius: 15px;
+}
+.col form input{
+    width: 400px;
+    margin: 0;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px transparent solid;
+    background-color: rgb(230, 230, 230);
+    padding-left: 20px;
+    font-size: 16px;
+}
+.col form input[type="submit"]{
+    background-color: yellow;
+    width: 400px;
+    cursor: pointer;
+}
+
+.col form label{
+    color: none;
+    background-color: none;
+    font-weight: bold;
+}
+.col2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.row{
+    width: 100%;
+    height: auto;
+    overflow: auto;
+}
+.row h3{
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+}
+.row input[type="text"]{
+    width: 300px;
+    height: 40px;
+    border-radius: 20px;
+    padding-left: 20px  ;
+}
+.row input[type="submit"]{
+    width: auto;
+    height: 40px;
+}
+.row table {
+    width: 100%;
+    background-color: white;
+    height: 300px;
+    overflow: auto;
+}
+.row table 
+th, td,.row form#table-form {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    height: 20px;
+    
+}
+.tr {
+    display: table-row;
+    vertical-align: inherit;
+    unicode-bidi: isolate;
+    border-color: inherit;
+    height: 20px;
+}
+
+ 
