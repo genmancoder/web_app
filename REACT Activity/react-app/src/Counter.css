@@ -1,0 +1,36 @@
+.counter-container {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    margin: 0 auto;
+    background-color: #c5b7b7;
+}
+
+.count-display {
+    font-size: 3rem;
+    margin: 20px 0;
+    color: #333;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.button-group button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.button-group button:hover {
+    background: #007bff;
+    color: #fff;
+}
